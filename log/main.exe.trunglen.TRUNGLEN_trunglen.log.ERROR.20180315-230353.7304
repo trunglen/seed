@@ -1,0 +1,6 @@
+Log file created at: 2018/03/15 23:03:53
+Running on machine: trunglen
+Binary: Built with gc go1.9.2 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0315 23:03:53.117239    7304 logger.go:32] [tbl_news] Title cannot be blank
+E0315 23:03:53.119239    7304 logger.go:26] [panic] [:Title cannot be blank]

@@ -1,0 +1,5 @@
+Log file created at: 2018/03/15 22:46:15
+Running on machine: trunglen
+Binary: Built with gc go1.9.2 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0315 22:46:15.787096   14308 logger.go:22] [mongodb] connect to mongodb medical successfully on host localhost:27017

@@ -1,0 +1,31 @@
+package mongodb
+
+import (
+	"seed/x/logger"
+
+	"gopkg.in/mgo.v2"
+)
+
+var database *mgo.Database
+var mongoLog = logger.NewLogger("mongodb")
+
+func Connect(url string, name string, uname string, pwd string) {
+	var info = &mgo.DialInfo{
+		Addrs:    []string{url},
+		Database: name,
+		Username: uname,
+		Password: pwd,
+	}
+	session, err := mgo.DialWithInfo(info)
+	if err != nil {
+		mongoLog.Errorf("error connect mongodb %s", err)
+		panic(err)
+	} else {
+		mongoLog.Infof("connect to mongodb %s successfully on host %s", name, url)
+		session.SetMode(mgo.Monotonic, true)
+		database = &mgo.Database{
+			Name:    name,
+			Session: session,
+		}
+	}
+}

@@ -1,0 +1,5 @@
+Log file created at: 2018/03/15 23:01:51
+Running on machine: trunglen
+Binary: Built with gc go1.9.2 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0315 23:01:51.403145    6088 logger.go:26] [panic] [reflect: call of reflect.Value.NumField on ptr Value]
