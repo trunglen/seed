@@ -17,13 +17,15 @@ const (
 )
 
 type User struct {
-	mongodb.Model  `bson:",inline"`
-	Name           string   `bson:"name" json:"name"`
-	UName          string   `bson:"uname" json:"uname"`
-	HashedPassword string   `bson:"password" json:"-"`
-	Password       Password `bson:"-" json:"password"`
-	Email          string   `bson:"email" json:"email"`
-	Role           string   `bson:"role" json:"role"`
+	mongodb.Model     `bson:",inline"`
+	Name              string   `bson:"name" json:"name"`
+	Phone             string   `bson:"phone" json:"phone"`
+	HashedPassword    string   `bson:"password" json:"-"`
+	Password          Password `bson:"-" json:"password"`
+	RestaurantName    string   `bson:"restaurant_name" json:"restaurant_name"`
+	RestaurantID      string   `bson:"restaurant_id" json:"restaurant_id"`
+	RestaurantAddress string   `bson:"restaurant_address" json:"restaurant_address"`
+	Role              string   `bson:"role" json:"role"`
 }
 
 const (
@@ -31,18 +33,23 @@ const (
 	errMisMatchUNamePwd = "username or password is incorect!"
 )
 
+func (u *User) CreateAccount() error {
+	if user, _ := GetUserByPhone(u.Phone); user != nil {
+		return web.BadRequest(errExists)
+	}
+	return userTable.Create(u)
+}
+
+func GetUserByPhone(phone string) (*User, error) {
+	var user *User
+	var err = userTable.FindOne(bson.M{
+		"phone": phone,
+	}, &user)
+	return user, err
+}
+
 func (u *User) Create() error {
 	var err = validator.Struct(u)
-	if u.Role == GUEST {
-		if user, _ := GetGuestByEmail(u.Email); user != nil {
-			return web.BadRequest(errExists)
-		}
-	} else {
-		if user, _ := GetAdmin(u.UName, "admin"); user != nil {
-			return web.BadRequest(errExists)
-		}
-	}
-
 	hashed, _ := u.Password.Hash()
 	u.HashedPassword = hashed
 	if err != nil {

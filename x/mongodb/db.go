@@ -16,7 +16,14 @@ func Connect(url string, name string, uname string, pwd string) {
 		Username: uname,
 		Password: pwd,
 	}
-	session, err := mgo.DialWithInfo(info)
+	var session *mgo.Session
+	var err error
+	if uname != "" {
+		session, err = mgo.DialWithInfo(info)
+
+	} else {
+		session, err = mgo.Dial(url)
+	}
 	if err != nil {
 		mongoLog.Errorf("error connect mongodb %s", err)
 		panic(err)
