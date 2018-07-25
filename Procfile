@@ -1,1 +1,1 @@
-web: rocky-springs-86767
+web: seed
