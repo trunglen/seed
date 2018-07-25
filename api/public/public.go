@@ -47,7 +47,8 @@ func (s *PublicServer) getPosts(c *gin.Context) {
 func (s *PublicServer) getCategories(c *gin.Context) {
 	var cats, err = category.GetCategories()
 	web.AssertNil(err)
-	s.SendData(c, cats)
+	c.JSON(200, cats)
+	// s.SendData(c, cats)
 }
 
 func (s *PublicServer) getDetail(c *gin.Context) {

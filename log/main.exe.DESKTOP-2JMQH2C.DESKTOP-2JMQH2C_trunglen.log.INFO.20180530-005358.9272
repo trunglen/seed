@@ -1,0 +1,5 @@
+Log file created at: 2018/05/30 00:53:58
+Running on machine: DESKTOP-2JMQH2C
+Binary: Built with gc go1.10.1 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0530 00:53:58.150906    9272 logger.go:22] [mongodb] connect to mongodb funjoke successfully on host 163.44.206.108:27017

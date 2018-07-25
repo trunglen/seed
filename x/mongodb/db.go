@@ -19,7 +19,8 @@ func Connect(url string, name string, uname string, pwd string) {
 	var session *mgo.Session
 	var err error
 	if uname != "" {
-		session, err = mgo.DialWithInfo(info)
+		// session, err = mgo.DialWithInfo(info)
+		session, err = mgo.Dial(info.Addrs[0])
 
 	} else {
 		session, err = mgo.Dial(url)
