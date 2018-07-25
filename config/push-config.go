@@ -1,7 +1,7 @@
 package config
 
 import (
-	"rocky-springs-86767/x/fcm"
+	"seed/x/fcm"
 )
 
 type pushConfig struct {

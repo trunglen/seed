@@ -1,7 +1,7 @@
 package config
 
 import (
-	"rocky-springs-86767/x/mongodb"
+	"seed/x/mongodb"
 )
 
 type dbConfig struct {

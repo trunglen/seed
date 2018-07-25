@@ -3,11 +3,11 @@ package post
 import (
 	"context"
 	"github.com/gin-gonic/gin"
-	"rocky-springs-86767/g/x/math"
-	"rocky-springs-86767/g/x/web"
-	"rocky-springs-86767/o/post"
-	// "rocky-springs-86767/o/push_token"
-	// "rocky-springs-86767/x/fcm"
+	"seed/g/x/math"
+	"seed/g/x/web"
+	"seed/o/post"
+	// "seed/o/push_token"
+	// "seed/x/fcm"
 )
 
 type PostServer struct {

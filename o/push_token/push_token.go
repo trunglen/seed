@@ -2,7 +2,7 @@ package push_token
 
 import (
 	"gopkg.in/mgo.v2/bson"
-	"rocky-springs-86767/x/mongodb"
+	"seed/x/mongodb"
 )
 
 var pushTable = mongodb.NewTable("push_token", "push")

@@ -2,9 +2,9 @@ package auth
 
 import (
 	"github.com/gin-gonic/gin"
-	"rocky-springs-86767/g/x/web"
-	"rocky-springs-86767/o/auth"
-	"rocky-springs-86767/o/user"
+	"seed/g/x/web"
+	"seed/o/auth"
+	"seed/o/user"
 )
 
 type AuthServer struct {

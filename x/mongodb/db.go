@@ -1,7 +1,7 @@
 package mongodb
 
 import (
-	"rocky-springs-86767/x/logger"
+	"seed/x/logger"
 
 	"gopkg.in/mgo.v2"
 )

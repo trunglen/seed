@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"rocky-springs-86767/g/x/web"
-	"rocky-springs-86767/x/logger"
+	"seed/g/x/web"
+	"seed/x/logger"
 
 	"github.com/gin-gonic/gin"
 )

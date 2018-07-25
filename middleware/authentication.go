@@ -2,8 +2,8 @@ package middleware
 
 import (
 	"github.com/gin-gonic/gin"
-	"rocky-springs-86767/g/x/web"
-	"rocky-springs-86767/o/auth"
+	"seed/g/x/web"
+	"seed/o/auth"
 )
 
 const errNotPermision = "you are not enough permision"

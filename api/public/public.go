@@ -3,11 +3,11 @@ package public
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"rocky-springs-86767/g/x/web"
-	"rocky-springs-86767/o/category"
-	"rocky-springs-86767/o/post"
-	"rocky-springs-86767/o/push_token"
-	"rocky-springs-86767/x/fcm"
+	"seed/g/x/web"
+	"seed/o/category"
+	"seed/o/post"
+	"seed/o/push_token"
+	"seed/x/fcm"
 	"strconv"
 )
 

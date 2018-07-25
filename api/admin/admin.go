@@ -2,11 +2,11 @@ package admin
 
 import (
 	"github.com/gin-gonic/gin"
-	"rocky-springs-86767/api/admin/category"
-	"rocky-springs-86767/api/admin/post"
-	"rocky-springs-86767/api/admin/user"
-	"rocky-springs-86767/g/x/web"
-	"rocky-springs-86767/middleware"
+	"seed/api/admin/category"
+	"seed/api/admin/post"
+	"seed/api/admin/user"
+	"seed/g/x/web"
+	"seed/middleware"
 )
 
 type AdminServer struct {

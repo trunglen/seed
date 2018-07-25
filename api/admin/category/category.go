@@ -1,8 +1,8 @@
 package category
 
 import (
-	"rocky-springs-86767/g/x/web"
-	"rocky-springs-86767/o/category"
+	"seed/g/x/web"
+	"seed/o/category"
 
 	"github.com/gin-gonic/gin"
 )

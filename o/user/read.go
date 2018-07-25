@@ -2,7 +2,7 @@ package user
 
 import (
 	"gopkg.in/mgo.v2/bson"
-	"rocky-springs-86767/g/x/web"
+	"seed/g/x/web"
 )
 
 var ErrMismatchedHashAndPassword = "crypto/bcrypt: hashedPassword is not the hash of the given password"
