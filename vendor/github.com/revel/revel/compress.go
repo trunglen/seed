@@ -9,8 +9,9 @@ import (
 	"net/http"
 	"strconv"
 	"strings"
-	"compress/gzip"
-	"compress/zlib"
+
+	"github.com/klauspost/compress/gzip"
+	"github.com/klauspost/compress/zlib"
 )
 
 var compressionTypes = [...]string{
