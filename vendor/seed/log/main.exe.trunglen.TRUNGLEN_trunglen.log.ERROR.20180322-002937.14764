@@ -1,0 +1,7 @@
+Log file created at: 2018/03/22 00:29:37
+Running on machine: trunglen
+Binary: Built with gc go1.9.2 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0322 00:29:37.270792   14764 logger.go:26] [tbl_post] [Content cannot be black]
+E0322 00:44:57.820479   14764 logger.go:26] [tbl_post] [Content cannot be black]
+E0322 00:55:10.051201   14764 logger.go:26] [tbl_post] [Title cannot be black]

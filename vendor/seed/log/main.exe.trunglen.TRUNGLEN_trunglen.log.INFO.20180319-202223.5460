@@ -1,0 +1,6 @@
+Log file created at: 2018/03/19 20:22:23
+Running on machine: trunglen
+Binary: Built with gc go1.9.2 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0319 20:22:23.170251    5460 logger.go:22] [mongodb] connect to mongodb medical successfully on host 163.44.206.108:27017
+E0319 22:05:53.946600    5460 logger.go:26] [tbl_post] [Title cannot be black]
