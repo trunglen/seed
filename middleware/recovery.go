@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"g/x/web"
+	"seed/g/x/web"
 	"seed/x/logger"
 
 	"github.com/gin-gonic/gin"

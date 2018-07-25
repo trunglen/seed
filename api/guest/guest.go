@@ -1,8 +1,8 @@
 package guest
 
 import (
-	"g/x/web"
 	"github.com/gin-gonic/gin"
+	"seed/g/x/web"
 	"seed/o/auth"
 	"seed/o/user"
 )

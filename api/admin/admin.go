@@ -1,8 +1,8 @@
 package admin
 
 import (
-	"g/x/web"
 	"github.com/gin-gonic/gin"
+	"seed/g/x/web"
 	"seed/api/admin/category"
 	"seed/api/admin/post"
 	"seed/api/admin/user"

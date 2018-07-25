@@ -1,7 +1,7 @@
 package post
 
 import (
-	"g/x/web"
+	"seed/g/x/web"
 	"gopkg.in/mgo.v2/bson"
 	"seed/x/logger"
 	"seed/x/mongodb"

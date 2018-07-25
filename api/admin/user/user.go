@@ -1,8 +1,8 @@
 package user
 
 import (
-	"g/x/web"
 	"github.com/gin-gonic/gin"
+	"seed/g/x/web"
 	"seed/o/user"
 )
 

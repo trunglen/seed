@@ -1,7 +1,7 @@
 package category
 
 import (
-	"g/x/web"
+	"seed/g/x/web"
 	"seed/x/logger"
 	"seed/x/mongodb"
 	"seed/x/validator"

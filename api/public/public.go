@@ -2,8 +2,8 @@ package public
 
 import (
 	"fmt"
-	"g/x/web"
 	"github.com/gin-gonic/gin"
+	"seed/g/x/web"
 	"seed/o/category"
 	"seed/o/post"
 	"seed/o/push_token"

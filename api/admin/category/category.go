@@ -1,7 +1,7 @@
 package category
 
 import (
-	"g/x/web"
+	"seed/g/x/web"
 	"seed/o/category"
 
 	"github.com/gin-gonic/gin"
