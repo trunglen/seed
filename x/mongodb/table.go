@@ -1,7 +1,7 @@
 package mongodb
 
 import (
-	"seed/g/x/math"
+	"rocky-springs-86767/g/x/math"
 
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"

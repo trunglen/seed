@@ -1,7 +1,7 @@
 package config
 
 import (
-	"seed/x/logger"
+	"rocky-springs-86767/x/logger"
 
 	"github.com/BurntSushi/toml"
 )

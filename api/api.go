@@ -1,10 +1,10 @@
 package api
 
 import (
-	"seed/api/admin"
-	"seed/api/auth"
-	"seed/api/guest"
-	"seed/api/public"
+	"rocky-springs-86767/api/admin"
+	"rocky-springs-86767/api/auth"
+	"rocky-springs-86767/api/guest"
+	"rocky-springs-86767/api/public"
 
 	"github.com/gin-gonic/gin"
 )

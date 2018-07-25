@@ -1,11 +1,11 @@
 package user
 
 import (
-	"seed/g/x/web"
 	"gopkg.in/mgo.v2/bson"
-	"seed/x/logger"
-	"seed/x/mongodb"
-	"seed/x/validator"
+	"rocky-springs-86767/g/x/web"
+	"rocky-springs-86767/x/logger"
+	"rocky-springs-86767/x/mongodb"
+	"rocky-springs-86767/x/validator"
 )
 
 var userTable = mongodb.NewTable("user", "usr")

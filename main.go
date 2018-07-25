@@ -3,12 +3,12 @@ package main
 import (
 	"os"
 	// 1 load first
-	_ "seed/config"
+	_ "rocky-springs-86767/config"
 	// 2
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"seed/api"
-	"seed/middleware"
+	"rocky-springs-86767/api"
+	"rocky-springs-86767/middleware"
 )
 
 func main() {

@@ -2,8 +2,8 @@ package auth
 
 import (
 	"gopkg.in/mgo.v2/bson"
-	"seed/g/x/math"
-	"seed/x/mongodb"
+	"rocky-springs-86767/g/x/math"
+	"rocky-springs-86767/x/mongodb"
 )
 
 var authTable = mongodb.NewTable("auth", "auth")

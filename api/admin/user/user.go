@@ -2,8 +2,8 @@ package user
 
 import (
 	"github.com/gin-gonic/gin"
-	"seed/g/x/web"
-	"seed/o/user"
+	"rocky-springs-86767/g/x/web"
+	"rocky-springs-86767/o/user"
 )
 
 type UserServer struct {
