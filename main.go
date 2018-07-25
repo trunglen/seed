@@ -6,19 +6,19 @@ import (
 	// 1 load first
 	_ "seed/config"
 	// 2
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"seed/api"
 	"seed/middleware"
 )
 
-func determineListenAddress() (string, error) {
+func GetPort() string {
 	port := os.Getenv("PORT")
 	if port == "" {
-		return "", fmt.Errorf("$PORT not set")
+		port = "4747"
+		log.Println("[-] No PORT environment variable detected. Setting to ", port)
 	}
-	return ":" + port, nil
+	return ":" + port
 }
 func main() {
 	r := gin.New()
@@ -27,9 +27,5 @@ func main() {
 	r.StaticFS("/static", http.Dir("./upload"))
 	api.NewApiServer(r.Group("api"))
 	// Listen and serve on 0.0.0.0:8080
-	var port, err = determineListenAddress()
-	if err != nil {
-		log.Fatal(err)
-	}
-	r.Run(":" + port)
+	r.Run(":" + GetPort())
 }
