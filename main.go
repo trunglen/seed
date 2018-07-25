@@ -5,6 +5,7 @@ import (
 	// 1 load first
 	_ "seed/config"
 	// 2
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"seed/api"
