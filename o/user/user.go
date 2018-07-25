@@ -20,6 +20,7 @@ type User struct {
 	mongodb.Model     `bson:",inline"`
 	Name              string   `bson:"name" json:"name"`
 	Phone             string   `bson:"phone" json:"phone"`
+	Uname             string   `bson:"uname" json:"uname"`
 	HashedPassword    string   `bson:"password" json:"-"`
 	Password          Password `bson:"-" json:"password"`
 	RestaurantName    string   `bson:"restaurant_name" json:"restaurant_name"`
