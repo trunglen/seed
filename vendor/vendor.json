@@ -1,7 +1,109 @@
 {
 	"comment": "",
+	"heroku": {
+		"goVersion": "go1.9",
+		"install": [
+			"./..."
+		]
+	},
 	"ignore": "test",
 	"package": [
+		{
+			"path": "C",
+			"revision": ""
+		},
+		{
+			"path": "bufio",
+			"revision": ""
+		},
+		{
+			"path": "bytes",
+			"revision": ""
+		},
+		{
+			"path": "compress/gzip",
+			"revision": ""
+		},
+		{
+			"path": "compress/zlib",
+			"revision": ""
+		},
+		{
+			"path": "container/heap",
+			"revision": ""
+		},
+		{
+			"path": "context",
+			"revision": ""
+		},
+		{
+			"path": "crypto/hmac",
+			"revision": ""
+		},
+		{
+			"path": "crypto/md5",
+			"revision": ""
+		},
+		{
+			"path": "crypto/rand",
+			"revision": ""
+		},
+		{
+			"path": "crypto/sha1",
+			"revision": ""
+		},
+		{
+			"path": "crypto/sha256",
+			"revision": ""
+		},
+		{
+			"path": "crypto/subtle",
+			"revision": ""
+		},
+		{
+			"path": "crypto/tls",
+			"revision": ""
+		},
+		{
+			"path": "encoding",
+			"revision": ""
+		},
+		{
+			"path": "encoding/base64",
+			"revision": ""
+		},
+		{
+			"path": "encoding/binary",
+			"revision": ""
+		},
+		{
+			"path": "encoding/csv",
+			"revision": ""
+		},
+		{
+			"path": "encoding/hex",
+			"revision": ""
+		},
+		{
+			"path": "encoding/json",
+			"revision": ""
+		},
+		{
+			"path": "encoding/xml",
+			"revision": ""
+		},
+		{
+			"path": "errors",
+			"revision": ""
+		},
+		{
+			"path": "flag",
+			"revision": ""
+		},
+		{
+			"path": "fmt",
+			"revision": ""
+		},
 		{
 			"checksumSHA1": "rcoUTEGR7KVr963l6P1rlMaYCzA=",
 			"path": "github.com/BurntSushi/toml",
@@ -207,6 +309,14 @@
 			"revisionTime": "2017-07-07T12:34:13Z"
 		},
 		{
+			"path": "go/build",
+			"revision": ""
+		},
+		{
+			"path": "go/format",
+			"revision": ""
+		},
+		{
 			"checksumSHA1": "oCH3J96RWvO8W4xjix47PModpio=",
 			"path": "golang.org/x/crypto/bcrypt",
 			"revision": "c126467f60eb25f8f27e5a981f32a87e3965053f",
@@ -349,13 +459,295 @@
 			"path": "gopkg.in/yaml.v2",
 			"revision": "5420a8b6744d3b0345ab293f6fcba19c978f1183",
 			"revisionTime": "2018-03-28T19:50:20Z"
+		},
+		{
+			"path": "hash",
+			"revision": ""
+		},
+		{
+			"path": "hash/adler32",
+			"revision": ""
+		},
+		{
+			"path": "hash/crc32",
+			"revision": ""
+		},
+		{
+			"path": "html",
+			"revision": ""
+		},
+		{
+			"path": "html/template",
+			"revision": ""
+		},
+		{
+			"path": "io",
+			"revision": ""
+		},
+		{
+			"path": "io/ioutil",
+			"revision": ""
+		},
+		{
+			"path": "log",
+			"revision": ""
+		},
+		{
+			"path": "log/syslog",
+			"revision": ""
+		},
+		{
+			"path": "math",
+			"revision": ""
+		},
+		{
+			"path": "math/big",
+			"revision": ""
+		},
+		{
+			"path": "math/bits",
+			"revision": ""
+		},
+		{
+			"path": "math/rand",
+			"revision": ""
+		},
+		{
+			"path": "mime",
+			"revision": ""
+		},
+		{
+			"path": "mime/multipart",
+			"revision": ""
+		},
+		{
+			"path": "mime/quotedprintable",
+			"revision": ""
+		},
+		{
+			"path": "net",
+			"revision": ""
+		},
+		{
+			"path": "net/http",
+			"revision": ""
+		},
+		{
+			"path": "net/http/httputil",
+			"revision": ""
+		},
+		{
+			"path": "net/mail",
+			"revision": ""
+		},
+		{
+			"path": "net/rpc",
+			"revision": ""
+		},
+		{
+			"path": "net/smtp",
+			"revision": ""
+		},
+		{
+			"path": "net/url",
+			"revision": ""
+		},
+		{
+			"path": "os",
+			"revision": ""
+		},
+		{
+			"path": "os/user",
+			"revision": ""
+		},
+		{
+			"path": "path",
+			"revision": ""
+		},
+		{
+			"path": "path/filepath",
+			"revision": ""
+		},
+		{
+			"path": "reflect",
+			"revision": ""
+		},
+		{
+			"path": "regexp",
+			"revision": ""
+		},
+		{
+			"path": "runtime",
+			"revision": ""
+		},
+		{
+			"path": "runtime/debug",
+			"revision": ""
+		},
+		{
+			"path": "seed",
+			"revision": ""
+		},
+		{
+			"path": "seed/api",
+			"revision": ""
+		},
+		{
+			"path": "seed/api/admin",
+			"revision": ""
+		},
+		{
+			"path": "seed/api/admin/category",
+			"revision": ""
+		},
+		{
+			"path": "seed/api/admin/post",
+			"revision": ""
+		},
+		{
+			"path": "seed/api/admin/user",
+			"revision": ""
+		},
+		{
+			"path": "seed/api/auth",
+			"revision": ""
+		},
+		{
+			"path": "seed/api/guest",
+			"revision": ""
+		},
+		{
+			"path": "seed/api/public",
+			"revision": ""
+		},
+		{
+			"path": "seed/config",
+			"revision": ""
+		},
+		{
+			"path": "seed/g/geo/s2",
+			"revision": ""
+		},
+		{
+			"path": "seed/g/queue/ex",
+			"revision": ""
+		},
+		{
+			"path": "seed/g/x/conf",
+			"revision": ""
+		},
+		{
+			"path": "seed/g/x/db/r",
+			"revision": ""
+		},
+		{
+			"path": "seed/g/x/math",
+			"revision": ""
+		},
+		{
+			"path": "seed/g/x/socket",
+			"revision": ""
+		},
+		{
+			"path": "seed/g/x/sockettrung",
+			"revision": ""
+		},
+		{
+			"path": "seed/g/x/web",
+			"revision": ""
+		},
+		{
+			"path": "seed/middleware",
+			"revision": ""
+		},
+		{
+			"path": "seed/o/auth",
+			"revision": ""
+		},
+		{
+			"path": "seed/o/category",
+			"revision": ""
+		},
+		{
+			"path": "seed/o/post",
+			"revision": ""
+		},
+		{
+			"path": "seed/o/push_token",
+			"revision": ""
+		},
+		{
+			"path": "seed/o/user",
+			"revision": ""
+		},
+		{
+			"path": "seed/x/fcm",
+			"revision": ""
+		},
+		{
+			"path": "seed/x/logger",
+			"revision": ""
+		},
+		{
+			"path": "seed/x/mail",
+			"revision": ""
+		},
+		{
+			"path": "seed/x/mongodb",
+			"revision": ""
+		},
+		{
+			"path": "seed/x/validator",
+			"revision": ""
+		},
+		{
+			"path": "sort",
+			"revision": ""
+		},
+		{
+			"path": "strconv",
+			"revision": ""
+		},
+		{
+			"path": "strings",
+			"revision": ""
+		},
+		{
+			"path": "sync",
+			"revision": ""
+		},
+		{
+			"path": "sync/atomic",
+			"revision": ""
+		},
+		{
+			"path": "syscall",
+			"revision": ""
+		},
+		{
+			"path": "text/template",
+			"revision": ""
+		},
+		{
+			"path": "time",
+			"revision": ""
+		},
+		{
+			"path": "unicode",
+			"revision": ""
+		},
+		{
+			"path": "unicode/utf16",
+			"revision": ""
+		},
+		{
+			"path": "unicode/utf8",
+			"revision": ""
+		},
+		{
+			"path": "unsafe",
+			"revision": ""
 		}
 	],
-	"rootPath": "github.com/trunglen/seed",
-	"heroku": {
-		"install": [
-			"./..."
-		],
-		"goVersion": "go1.9"
-	}
+	"rootPath": "seed"
 }
