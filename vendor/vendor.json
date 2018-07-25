@@ -1,5 +1,11 @@
 {
 	"comment": "",
+	"heroku": {
+		"goVersion": "go1.9",
+		"install": [
+			"./..."
+		]
+	},
 	"ignore": "test",
 	"package": [
 		{
@@ -55,6 +61,18 @@
 			"path": "github.com/golang/protobuf/proto",
 			"revision": "e09c5db296004fbe3f74490e84dcd62c3c5ddb1b",
 			"revisionTime": "2018-03-28T16:31:53Z"
+		},
+		{
+			"checksumSHA1": "UpYmA/ZHwIMeS/7SIbEuqqY5fbg=",
+			"path": "github.com/heroku/x/hmetrics",
+			"revision": "1de401e1ba0e5db3e5c15d2faeee777e0b685700",
+			"revisionTime": "2018-07-19T22:16:34Z"
+		},
+		{
+			"checksumSHA1": "tNVx82vmWZWQcsklGeRCiQtH21w=",
+			"path": "github.com/heroku/x/hmetrics/onload",
+			"revision": "1de401e1ba0e5db3e5c15d2faeee777e0b685700",
+			"revisionTime": "2018-07-19T22:16:34Z"
 		},
 		{
 			"checksumSHA1": "/tNJugHwO0VHuJVxlRPZOmBDZvk=",
@@ -231,11 +249,5 @@
 			"revisionTime": "2018-03-28T19:50:20Z"
 		}
 	],
-	"rootPath": "seed",
-	"heroku": {
-		"install": [
-			"./..."
-		],
-		"goVersion": "go1.9"
-	}
+	"rootPath": "seed"
 }
