@@ -3,7 +3,7 @@
 	"ignore": "test",
 	"package": [
 		{
-			"path": "g/x/math",
+			"path": "seed/g/x/math",
 			"revision": ""
 		},
 		{

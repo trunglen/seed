@@ -2,8 +2,8 @@ package post
 
 import (
 	"context"
-	"g/x/math"
 	"github.com/gin-gonic/gin"
+	"seed/g/x/math"
 	"seed/g/x/web"
 	"seed/o/post"
 	// "seed/o/push_token"

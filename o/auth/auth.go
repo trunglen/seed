@@ -1,8 +1,8 @@
 package auth
 
 import (
-	"g/x/math"
 	"gopkg.in/mgo.v2/bson"
+	"seed/g/x/math"
 	"seed/x/mongodb"
 )
 

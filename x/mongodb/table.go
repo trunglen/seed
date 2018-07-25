@@ -1,7 +1,7 @@
 package mongodb
 
 import (
-	"g/x/math"
+	"seed/g/x/math"
 
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
