@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"os"
 	// 1 load first
 	_ "seed/config"
@@ -20,12 +21,15 @@ func determineListenAddress() (string, error) {
 	return ":" + port, nil
 }
 func main() {
-	port := os.Getenv("PORT")
 	r := gin.New()
 	r.StaticFS("/app", http.Dir("./app")).Use(middleware.AddStaticHeader())
 	r.Use(middleware.AddHeader(), middleware.RecoveryWithWriter())
 	r.StaticFS("/static", http.Dir("./upload"))
 	api.NewApiServer(r.Group("api"))
 	// Listen and serve on 0.0.0.0:8080
-	r.Run(":" + determineListenAddress())
+	var port, err = determineListenAddress()
+	if err != nil {
+		log.Fatal(err)
+	}
+	r.Run(":" + port)
 }
