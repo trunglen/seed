@@ -15,7 +15,7 @@ import (
 func GetPort() string {
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "4747"
+		port = "8080"
 		log.Println("[-] No PORT environment variable detected. Setting to ", port)
 	}
 	return ":" + port
